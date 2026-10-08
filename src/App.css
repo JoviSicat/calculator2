@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.Header {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.Calculator {
+  background: #1e293b;
+  padding: 24px;
+  width: 320px;
+  border-radius: 24px;
+  box-shadow: 
+    0 20px 30px -10px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+
+.CalcDisplay {
+  background-color: #0f172a;
+  color: #f8fafc;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.CalcButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+
+.CalcButton {
+  background: #334155;
+  color: #f8fafc;
+  border: none;
+  border-radius: 14px;
+  height: 56px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #0f172a, 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.08s ease;
+}
+
+.CalcButton:hover {
+  background: #475569;
+}
+
+.CalcButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #0f172a;
+}
+
+
+.OpButton {
+  background: #f97316;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  height: 56px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #c2410c, 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.08s ease;
+}
+
+.OpButton:hover {
+  background: #fb923c;
+}
+
+.OpButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #c2410c;
+}
+
+
+.EqualsButton {
+  background: #f59e0b;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  height: 56px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #b45309, 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.08s ease;
+}
+
+.EqualsButton:hover {
+  background: #fbbf24;
+}
+
+.EqualsButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #b45309;
+}
+
+
+.ClearButton {
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  height: 56px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #991b1b, 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.08s ease;
+}
+
+.ClearButton:hover {
+  background: #dc2626;
+}
+
+.ClearButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #991b1b;
+}
+
+
+.SicatButton {
+  grid-column: span 4;
+  background: #0ea5e9;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  height: 56px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #0369a1, 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.08s ease;
+}
+
+.SicatButton:hover {
+  background: #38bdf8;
+}
+
+.SicatButton:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #0369a1;
+}
